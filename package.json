@@ -21,7 +21,27 @@
         "height": 600
       },
       "resizable": true
-    }
+    },
+    "about": "File manager for browsing and organizing your files.",
+    "help": [
+      "Navigate folders",
+      "Double-click to open",
+      "Drag to move files"
+    ],
+    "docs": "https://zos-apps.github.io/files",
+    "site": "https://github.com/zos-apps/files",
+    "shortcuts": [
+      "Cmd+N New window",
+      "Cmd+I Get info",
+      "Space Quick Look"
+    ],
+    "features": [
+      "File browsing",
+      "Icon/list views",
+      "Quick Look",
+      "Drag & drop",
+      "Search"
+    ]
   },
   "scripts": {
     "build": "tsup",
@@ -54,5 +74,13 @@
     "files",
     "macos",
     "desktop"
-  ]
+  ],
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/zos-apps"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
 }
