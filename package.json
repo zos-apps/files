@@ -41,7 +41,26 @@
       "Quick Look",
       "Drag & drop",
       "Search"
-    ]
+    ],
+    "screenshots": {
+      "hero": "screenshots/hero.png",
+      "images": [
+        "screenshots/1-main.png",
+        "screenshots/2-feature.png"
+      ]
+    },
+    "downloads": {
+      "web": "https://zos-apps.github.io/files"
+    },
+    "featured": false,
+    "tags": [
+      "system",
+      "utility",
+      "files"
+    ],
+    "releaseDate": "2024-12-28",
+    "support": "https://github.com/zos-apps/files/issues",
+    "changelog": "https://github.com/zos-apps/files/releases"
   },
   "scripts": {
     "build": "tsup",
