@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-
-interface FilesProps { onClose: () => void; }
+import { useState } from 'react';
+import type { AppProps } from '@zos-apps/config';
+import { useLocalStorage } from '@zos-apps/config';
 
 interface FileItem { name: string; type: 'folder' | 'file'; size?: string; modified: string; }
 
@@ -13,9 +13,9 @@ const MOCK_FILES: FileItem[] = [
   { name: 'notes.md', type: 'file', size: '4 KB', modified: 'Dec 27, 2024' },
 ];
 
-const Files: React.FC<FilesProps> = ({ onClose }) => {
-  const [path, setPath] = useState('/home/guest');
-  const [view, setView] = useState<'grid' | 'list'>('list');
+const Files: React.FC<AppProps> = ({ onClose: _onClose }) => {
+  const [path, _setPath] = useState('/home/guest');
+  const [view, setView] = useLocalStorage<'grid' | 'list'>('files-view', 'list');
   const [selected, setSelected] = useState<string | null>(null);
 
   return (
